@@ -464,6 +464,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
   margin-bottom: 20px;
 }
 
