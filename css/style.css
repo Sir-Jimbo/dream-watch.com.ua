@@ -874,7 +874,8 @@ a {
           align-items: center;
 }
 
-.footer__item p img {
+.footer__item p img,
+.footer__item p svg {
   width: 25px;
   margin-right: 5px;
 }
