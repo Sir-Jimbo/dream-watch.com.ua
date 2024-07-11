@@ -116,7 +116,7 @@ body {
   color: #000000;
   font-size: 12px;
   font-weight: 400;
-  line-height: 1;
+  line-height: normal;
   min-height: 100vh;
 }
 
@@ -219,7 +219,7 @@ a {
 }
 
 .header__logo a {
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 900;
   color: #000000;
   text-transform: uppercase;
@@ -646,8 +646,6 @@ a {
 .catalog__link {
   color: #000000;
   margin-bottom: 25px;
-  max-width: 120px;
-  width: 100%;
 }
 
 .catalog__list {
@@ -667,8 +665,6 @@ a {
 }
 
 .catalog__item--bottom a {
-  max-width: 120px;
-  width: 100%;
   color: #000000;
 }
 
@@ -702,7 +698,7 @@ a {
   position: relative;
   overflow: hidden;
   background-color: #f8f7f4;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .popular-products__item--top:before {
@@ -725,12 +721,12 @@ a {
 }
 
 .popular-products__item--bottom h3 {
-  font-size: 22px;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
 .popular-products__item--bottom p {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .popular-products__slide.swiper-slide-active .popular-products__slide--top {
@@ -783,8 +779,6 @@ a {
   margin-top: 25px;
   text-align: center;
   color: #000000;
-  max-width: 120px;
-  width: 100%;
   padding: 4px;
   border: 1px solid #000000;
 }
@@ -992,12 +986,11 @@ a {
   }
 
   .catalog h3 {
-    padding: 15px;
+    padding: 10px;
   }
 
   .catalog__link {
-    margin-bottom: 45px;
-    max-width: 310px;
+    margin-bottom: 30px;
   }
 
   .catalog__list {
@@ -1013,12 +1006,8 @@ a {
   }
 
   .catalog__item--top a img {
-    min-height: 300px;
-    max-height: 300px;
-  }
-
-  .catalog__item--bottom a {
-    max-width: 310px;
+    min-height: 200px;
+    max-height: 200px;
   }
 
   .catalog__item {
@@ -1127,8 +1116,8 @@ a {
   }
 
   h2 {
-    font-size: 22px;
-    margin-bottom: 45px;
+    font-size: 20px;
+    margin-bottom: 30px;
   }
 
   h3 {
@@ -1163,7 +1152,7 @@ a {
   }
 
   .popular-products__slide--bottom h3 {
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 10px;
   }
 
@@ -1172,9 +1161,8 @@ a {
   }
 
   .popular-products__link {
-    margin-top: 90px;
-    max-width: 310px;
-    padding: 15px;
+    margin-top: 30px;
+    padding: 10px 15px;
     font-size: 16px;
   }
 
@@ -1185,7 +1173,7 @@ a {
 
   .why__slide p {
     display: block;
-    font-size: 22px;
+    font-size: 20px;
     margin-top: 75px;
   }
 
