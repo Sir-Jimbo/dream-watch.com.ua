@@ -163,7 +163,6 @@ a {
 
 .header__container {
   background-color: #fff;
-  padding-bottom: 10px;
 }
 
 .header__mobile {
@@ -952,6 +951,10 @@ a {
 @media screen and (min-width: 1024px) {
   [class*=__container] {
     padding: 45px;
+  }
+
+  .header__container {
+    padding-bottom: 10px;
   }
 
   .header__mobile {
