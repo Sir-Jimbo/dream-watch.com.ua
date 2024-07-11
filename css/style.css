@@ -628,7 +628,7 @@ a {
 
 .hero__slider img {
   min-height: 360px;
-  max-height: 785px;
+  max-height: 580px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
