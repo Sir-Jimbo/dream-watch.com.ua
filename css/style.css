@@ -163,6 +163,7 @@ a {
 
 .header__container {
   background-color: #fff;
+  padding-bottom: 10px;
 }
 
 .header__mobile {
@@ -1129,7 +1130,7 @@ a {
   }
 
   .header__menu ul li {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .popular-products__slide.swiper-slide-active .popular-products__slide--top {
