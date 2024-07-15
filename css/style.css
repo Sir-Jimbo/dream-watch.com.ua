@@ -144,7 +144,7 @@
 }
 
 body {
-  font-family: "Minion Pro", sans-serif;
+  font-family: "Minion Pro", sans-serif !important;
   color: #000000;
   font-size: 12px;
   font-weight: 400;
@@ -1174,6 +1174,7 @@ a {
 
   .header__languages {
     margin-left: 10px;
+    font-size: 18px;
   }
 
   .header__pin {
