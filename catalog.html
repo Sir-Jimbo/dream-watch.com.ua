@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240805221008"
+  />
+  <link rel="stylesheet" href="css/style.min.css?_v=20240805221008" />
+  <title>Каталог</title>
+</head>
+
+  <body>
+    <header class="header">
+  <div class="header__container">
+    <div class="header__mobile">
+      <div class="header__left">
+        <div class="header__burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="header__search">
+          <svg width="17" height="17">
+            <use xlink:href="img/sprite.svg#icon-search"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="header__logo">
+        <a href="index.html">
+          <picture>
+            <source srcset="img/logo.webp" type="image/webp" />
+            <img src="img/logo.svg" alt="logo" width="275" height="35" />
+          </picture>
+        </a>
+      </div>
+      <div class="header__right">
+        <div class="header__languages">
+          <div class="header__languages--active">EN</div>
+          <div class="header__languages--list">
+            <a href="#" class="header__languages--link">EN</a>
+            <a href="#" class="header__languages--link">PL</a>
+            <a href="#" class="header__languages--link">UA</a>
+          </div>
+        </div>
+        <div class="header__pin">
+          <svg width="13" height="17">
+            <use xlink:href="img/sprite.svg#icon-pin"></use>
+          </svg>
+        </div>
+        <div class="header__cart">
+          <svg width="16" height="17">
+            <use xlink:href="img/sprite.svg#icon-cart"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="mobile-menu">
+        <div class="mobile-menu__header">
+          <span class="mobile-menu__close">&times;</span>
+          <div class="header__logo">
+            <a href="index.html">
+              <picture>
+                <source srcset="img/logo.webp" type="image/webp" />
+                <img src="img/logo.svg" alt="logo" width="275" height="35" />
+              </picture>
+            </a>
+          </div>
+        </div>
+        <ul class="mobile-menu__list">
+          <li data-submenu="watches">WATCHES <span>&gt;</span></li>
+          <li>JEWELRY <span>&gt;</span></li>
+          <li>ACCESSORIES <span>&gt;</span></li>
+          <li>FOR CLIENTS <span>&gt;</span></li>
+          <li>NEWS <span>&gt;</span></li>
+          <li>OUR SERVICES <span>&gt;</span></li>
+          <li>ABOUT US <span>&gt;</span></li>
+        </ul>
+        <div class="mobile-menu__footer">
+          <div class="language">Language <span>&gt;</span></div>
+          <a href="tel:+48 696 510 554">
+            <picture>
+              <source srcset="img/phone.webp" type="image/webp" />
+              <img src="img/phone.png" alt="phone" />
+            </picture>
+            +48 696 510 554
+          </a>
+          <a href="tel:+380 96 888 8080">
+            <picture>
+              <source srcset="img/phone.webp" type="image/webp" />
+              <img src="img/phone.png" alt="phone" />
+            </picture>
+            +380 96 888 8080
+          </a>
+          <p>
+            <picture>
+              <source srcset="img/pin.webp" type="image/webp" />
+              <img src="img/pin.png" alt="boutique" width="39" height="48" />
+            </picture>
+            Wiejska 9 Warsaw, Poland
+          </p>
+          <p>
+            <picture>
+              <source srcset="img/pin.webp" type="image/webp" />
+              <img src="img/pin.png" alt="boutique" width="39" height="48" />
+            </picture>
+            Malopidvalna 12/10 Kiev, Ukraine
+          </p>
+        </div>
+      </div>
+      <div class="mobile-submenu" id="watches">
+        <div class="mobile-submenu__header">
+          <span class="mobile-submenu__close">&times;</span>
+          <div class="header__logo">
+            <a href="index.html">
+              <picture>
+                <source srcset="img/logo.webp" type="image/webp" />
+                <img src="img/logo.svg" alt="logo" width="275" height="35" />
+              </picture>
+            </a>
+          </div>
+        </div>
+        <div class="mobile-submenu__content">
+          <div class="mobile-submenu__content--top">
+            <p>WATCHES</p>
+            <span class="mobile-submenu__back">&lt;</span>
+          </div>
+          <div class="mobile-submenu__list">
+            <div class="mobile-submenu__item">
+              <div class="mobile-submenu__item--top">
+                <picture>
+                  <source srcset="img/product-6.webp" type="image/webp" />
+                  <img src="img/product-6.png" alt="popular-products" />
+                </picture>
+              </div>
+              <div class="mobile-submenu__item--bottom">
+                <a href="#">AUDEMARS PIGUET</a>
+              </div>
+            </div>
+            <div class="mobile-submenu__item">
+              <div class="mobile-submenu__item--top">
+                <picture>
+                  <source srcset="img/product-6.webp" type="image/webp" />
+                  <img src="img/product-6.png" alt="popular-products" />
+                </picture>
+              </div>
+              <div class="mobile-submenu__item--bottom">
+                <a href="#">BREGUET</a>
+              </div>
+            </div>
+            <div class="mobile-submenu__item">
+              <div class="mobile-submenu__item--top">
+                <picture>
+                  <source srcset="img/product-6.webp" type="image/webp" />
+                  <img src="img/product-6.png" alt="popular-products" />
+                </picture>
+              </div>
+              <div class="mobile-submenu__item--bottom">
+                <a href="#">FRANK MULLER</a>
+              </div>
+            </div>
+            <div class="mobile-submenu__item">
+              <div class="mobile-submenu__item--top">
+                <picture>
+                  <source srcset="img/product-6.webp" type="image/webp" />
+                  <img src="img/product-6.png" alt="popular-products" />
+                </picture>
+              </div>
+              <div class="mobile-submenu__item--bottom">
+                <a href="#">ROLEX</a>
+              </div>
+            </div>
+          </div>
+          <div class="mobile-submenu__all-brands">
+            <a href="#">All brands A-Z</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__desktop">
+      <div class="header__top">
+        <div class="header__left">
+          <a href="#" class="header__link">CONTACT US</a>
+          <a href="#" class="header__link">SERVICES</a>
+        </div>
+        <div class="header__logo">
+          <a href="index.html">
+            <picture>
+              <source srcset="img/logo.webp" type="image/webp" />
+              <img src="img/logo.svg" alt="logo" width="275" height="35" />
+            </picture>
+          </a>
+        </div>
+        <div class="header__right">
+          <div class="header__search">
+            <svg width="16" height="16">
+              <use xlink:href="img/sprite.svg#icon-search"></use>
+            </svg>
+          </div>
+          <div class="header__cart">
+            <svg width="16" height="16">
+              <use xlink:href="img/sprite.svg#icon-cart"></use>
+            </svg>
+          </div>
+          <div class="header__pin">
+            <svg width="16" height="16">
+              <use xlink:href="img/sprite.svg#icon-pin"></use>
+            </svg>
+          </div>
+          <div class="header__languages">
+            <div class="header__languages--active">EN</div>
+            <div class="header__languages--list">
+              <a href="#" class="header__languages--link">EN</a>
+              <a href="#" class="header__languages--link">PL</a>
+              <a href="#" class="header__languages--link">UA</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <menu class="header__menu">
+        <ul>
+          <li>
+            <a href="#">WATCHES</a>
+            <div class="header__submenu">
+              <div class="header__submenu--left">
+                <ul>
+                  <li>
+                    <a href="#" data-image="img/product-1.png"
+                      >AUDEMARS PIGUET</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" data-image="img/product-4.png">BREGUET</a>
+                  </li>
+                  <li>
+                    <a href="#" data-image="img/product-5.png">BVLGARI</a>
+                  </li>
+                  <li>
+                    <a href="#" data-image="img/product-6.png">CARTIER</a>
+                  </li>
+                  <li>
+                    <a href="#" data-image="img/product-4.png">CHOPARD</a>
+                  </li>
+                  <li>
+                    <a href="#" data-image="img/product-4.png">FRANCK MULLER</a>
+                  </li>
+                  <li>
+                    <a href="#" data-image="girard_perregaux.jpg"
+                      >Girard Perregaux</a
+                    >
+                  </li>
+                  <li><a href="#" data-image="img/product-5.png">GRAFF</a></li>
+                  <li><a href="#" data-image="hublot.jpg">HUBLOT</a></li>
+                </ul>
+              </div>
+              <div class="header__submenu--right">
+                <ul>
+                  <li><a href="#" data-image="img/product-6.png">IWC</a></li>
+                  <li><a href="#" data-image="omega.jpg">OMEGA</a></li>
+                  <li>
+                    <a href="#" data-image="img/product-4.png">PANERAI</a>
+                  </li>
+                  <li>
+                    <a href="#" data-image="img/product-5.png"
+                      >PATEK PHILIPPE</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" data-image="img/product-6.png">RICHARD MILLE</a>
+                  </li>
+                  <li><a href="#" data-image="img/product-4.png">ROLEX</a></li>
+                  <li>
+                    <a href="#" data-image="img/product-5.png">ULYSSE NARDIN</a>
+                  </li>
+                  <li>
+                    <a href="#" data-image="img/product-6.png"
+                      >Vacheron Constantin</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" data-image="img/product-4.png"
+                      >Van Cleef & Arpels</a
+                    >
+                  </li>
+                </ul>
+                <a href="#" class="header__submenu--brands">All brands A-Z</a>
+              </div>
+              <div class="header__submenu--picture"></div>
+            </div>
+          </li>
+          <li>
+            <a href="#">JEWELRY</a>
+            <div class="header__submenu">
+              <div class="header__submenu--left">
+                <ul>
+                  <li>
+                    <a href="#" data-image="img/jewelry.png">Bvlgari</a>
+                  </li>
+                  <li>
+                    <a href="#" data-image="img/product-4.png"
+                      >carreraycarrera</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" data-image="img/product-5.png">cartier</a>
+                  </li>
+                  <li>
+                    <a href="#" data-image="img/product-6.png">chopard</a>
+                  </li>
+                  <li>
+                    <a href="#" data-image="img/product-4.png">graff</a>
+                  </li>
+                  <li>
+                    <a href="#" data-image="img/product-4.png">messika</a>
+                  </li>
+                  <li>
+                    <a href="#" data-image="girard_perregaux.jpg">pvg</a>
+                  </li>
+                  <li>
+                    <a href="#" data-image="img/product-5.png">tiffany&Co</a>
+                  </li>
+                  <li>
+                    <a href="#" data-image="hublot.jpg">Van Cleef & Arpels</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="header__submenu--picture"></div>
+            </div>
+          </li>
+          <li>
+            <a href="#">ACCESSORIES</a>
+            <div class="header__submenu">
+              <!-- Вміст підменю для ACCESSORIES -->
+            </div>
+          </li>
+          <li>
+            <a href="#">FOR CLIENTS</a>
+            <div class="header__submenu">
+              <!-- Вміст підменю для FOR CLIENTS -->
+            </div>
+          </li>
+          <li>
+            <a href="#">NEWS</a>
+            <div class="header__submenu">
+              <!-- Вміст підменю для NEWS -->
+            </div>
+          </li>
+          <li>
+            <a href="#">ABOUT US</a>
+            <div class="header__submenu">
+              <!-- Вміст підменю для ABOUT US -->
+            </div>
+          </li>
+        </ul>
+      </menu>
+    </div>
+  </div>
+</header>
+
+    <main>
+      <section class="men-women">
+  <div class="men-women__container">
+    <div class="men-women__list">
+      <div class="men-women__item">
+        <picture>
+          <source srcset="img/women.webp" type="image/webp" />
+          <img src="img/women.png" alt="women" />
+        </picture>
+        <h2>FOR HER</h2>
+      </div>
+      <div class="men-women__item">
+        <picture>
+          <source srcset="img/men.webp" type="image/webp" />
+          <img src="img/men.png" alt="men" />
+        </picture>
+        <h2>FOR HIM</h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="goods">
+  <div class="goods__container">
+    <div class="goods__top">
+      <div class="goods__sort" onclick="toggleDropdown()">
+        Sort by
+        <picture><source srcset="img/arrow.webp" type="image/webp"><img src="img/arrow.png" alt="" /></picture>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#">Novelties first</a>
+          <a href="#">Price low to high</a>
+          <a href="#">Price high to low</a>
+          <a href="#">Popular products</a>
+        </div>
+      </div>
+      <div class="goods__counts">
+        <div class="goods__counts--list two">
+          <div class="goods__counts--item"></div>
+          <div class="goods__counts--item"></div>
+          <div class="goods__counts--item"></div>
+          <div class="goods__counts--item"></div>
+        </div>
+        <div class="goods__counts--list three">
+          <div class="goods__counts--item"></div>
+          <div class="goods__counts--item"></div>
+          <div class="goods__counts--item"></div>
+          <div class="goods__counts--item"></div>
+          <div class="goods__counts--item"></div>
+          <div class="goods__counts--item"></div>
+        </div>
+        <div class="goods__count active"></div>
+      </div>
+    </div>
+    <div class="goods__bottom">
+      <div class="goods__left">
+        <h2 class="no-collapse">Availability</h2>
+        <ul class="no-expanded">
+          <li>
+            <label class="custom-radio" for="in-stock">
+              <input type="radio" name="availability" id="in-stock" hidden />
+              <span class="radio-btn"></span> In Stock
+            </label>
+          </li>
+          <li>
+            <label class="custom-radio" for="under-order">
+              <input type="radio" name="availability" id="under-order" hidden />
+              <span class="radio-btn"></span> Under Order
+            </label>
+          </li>
+        </ul>
+        <h2>Selection For <picture><source srcset="img/arrow.webp" type="image/webp"><img src="img/arrow.png" alt="" /></picture></h2>
+        <ul>
+          <li>
+            <label class="custom-radio" for="for-him">
+              <input type="radio" name="selection" id="for-him" hidden />
+              <span class="radio-btn"></span> For Him
+            </label>
+          </li>
+          <li>
+            <label class="custom-radio" for="for-her">
+              <input type="radio" name="selection" id="for-her" hidden />
+              <span class="radio-btn"></span> For Her
+            </label>
+          </li>
+          <li>
+            <label class="custom-radio" for="unisex">
+              <input type="radio" name="selection" id="unisex" hidden />
+              <span class="radio-btn"></span> Unisex
+            </label>
+          </li>
+        </ul>
+        <h2>PRICE <picture><source srcset="img/arrow.webp" type="image/webp"><img src="img/arrow.png" alt="" /></picture></h2>
+        <ul>
+          <li>
+            <label class="custom-radio" for="up-to">
+              <input type="radio" name="selection" id="up-to" hidden />
+              <span class="radio-btn"></span> Up to 5 000€
+            </label>
+          </li>
+          <li>
+            <label class="custom-radio" for="up-to-10">
+              <input type="radio" name="selection" id="up-to-10" hidden />
+              <span class="radio-btn"></span> Up to 10 000€
+            </label>
+          </li>
+          <li>
+            <label class="custom-radio" for="up-to-20">
+              <input type="radio" name="selection" id="up-to-20" hidden />
+              <span class="radio-btn"></span> Up to 20 000€
+            </label>
+          </li>
+          <li>
+            <label class="custom-radio" for="from-50">
+              <input type="radio" name="selection" id="from-50" hidden />
+              <span class="radio-btn"></span> FROM 50 000€
+            </label>
+          </li>
+        </ul>
+        <h2>BRAND <picture><source srcset="img/arrow.webp" type="image/webp"><img src="img/arrow.png" alt="" /></picture></h2>
+        <ul>
+          <li>
+            <label class="custom-radio">
+              <input type="radio" name="brand" id="brand1" hidden />
+              <span class="radio-btn"></span> A. LANGE & SOHNE
+            </label>
+          </li>
+          <li>
+            <label class="custom-radio">
+              <input type="radio" name="brand" id="brand2" hidden />
+              <span class="radio-btn"></span> ARNOLD & SON
+            </label>
+          </li>
+          <li>
+            <label class="custom-radio">
+              <input type="radio" name="brand" id="brand3" hidden />
+              <span class="radio-btn"></span> AUDEMARS PIGUET
+            </label>
+          </li>
+          <li>
+            <label class="custom-radio">
+              <input type="radio" name="brand" id="brand4" hidden />
+              <span class="radio-btn"></span> BELL & ROSS
+            </label>
+          </li>
+          <li>
+            <label class="custom-radio">
+              <input type="radio" name="brand" id="brand5" hidden />
+              <span class="radio-btn"></span> BLANCPAIN
+            </label>
+          </li>
+          <li>
+            <label class="custom-radio">
+              <input type="radio" name="brand" id="brand6" hidden />
+              <span class="radio-btn"></span> BOVET
+            </label>
+          </li>
+          <li>
+            <label class="custom-radio">
+              <input type="radio" name="brand" id="brand7" hidden />
+              <span class="radio-btn"></span> BREGUET
+            </label>
+          </li>
+          <li>
+            <label class="custom-radio">
+              <input type="radio" name="brand" id="brand8" hidden />
+              <span class="radio-btn"></span> ROLEX
+            </label>
+          </li>
+          <li>
+            <label class="custom-radio">
+              <input type="radio" name="brand" id="brand9" hidden />
+              <span class="radio-btn"></span> BREGUET
+            </label>
+          </li>
+        </ul>
+      </div>
+      <div class="goods__right">
+        <div class="goods__buttons">
+          <div class="goods__button sort">Sort by</div>
+          <div class="goods__sort--mobile">
+            <div class="goods__sort--header">
+              <p>Sort by</p>
+              <span class="goods__sort--close">x</span>
+            </div>
+            <ul>
+              <li>
+                <label class="custom-radio" for="sort1">
+                  <input type="radio" name="sort" id="sort1" hidden />
+                  <span class="radio-btn"></span> Novelties first
+                </label>
+              </li>
+              <li>
+                <label class="custom-radio" for="sort2">
+                  <input type="radio" name="sort" id="sort2" hidden />
+                  <span class="radio-btn"></span> Price low to high
+                </label>
+              </li>
+              <li>
+                <label class="custom-radio" for="sort3">
+                  <input type="radio" name="sort" id="sort3" hidden />
+                  <span class="radio-btn"></span> Price high to low
+                </label>
+              </li>
+              <li>
+                <label class="custom-radio" for="sort4">
+                  <input type="radio" name="sort" id="sort4" hidden />
+                  <span class="radio-btn"></span> Popular products
+                </label>
+              </li>
+            </ul>
+            <div class="goods__sort--footer">
+              <div class="goods__sort--clear">Clear all</div>
+              <div class="goods__sort--apply">Apply</div>
+            </div>
+          </div>
+          <div class="goods__button filter">FILTER by</div>
+          <div class="goods__filter--mobile">
+            <div class="goods__filter--header">
+              <p>FILTER by</p>
+              <span class="goods__filter--close">x</span>
+            </div>
+            <div class="goods__left">
+              <h2 class="no-collapse">Availability</h2>
+              <ul class="no-expanded">
+                <li>
+                  <label class="custom-radio" for="in-stock">
+                    <input
+                      type="radio"
+                      name="availability"
+                      id="in-stock"
+                      hidden
+                    />
+                    <span class="radio-btn"></span> In Stock
+                  </label>
+                </li>
+                <li>
+                  <label class="custom-radio" for="under-order">
+                    <input
+                      type="radio"
+                      name="availability"
+                      id="under-order"
+                      hidden
+                    />
+                    <span class="radio-btn"></span> Under Order
+                  </label>
+                </li>
+              </ul>
+              <h2>Selection For <picture><source srcset="img/arrow.webp" type="image/webp"><img src="img/arrow.png" alt="" /></picture></h2>
+              <ul>
+                <li>
+                  <label class="custom-radio" for="for-him">
+                    <input type="radio" name="selection" id="for-him" hidden />
+                    <span class="radio-btn"></span> For Him
+                  </label>
+                </li>
+                <li>
+                  <label class="custom-radio" for="for-her">
+                    <input type="radio" name="selection" id="for-her" hidden />
+                    <span class="radio-btn"></span> For Her
+                  </label>
+                </li>
+                <li>
+                  <label class="custom-radio" for="unisex">
+                    <input type="radio" name="selection" id="unisex" hidden />
+                    <span class="radio-btn"></span> Unisex
+                  </label>
+                </li>
+              </ul>
+              <h2>PRICE <picture><source srcset="img/arrow.webp" type="image/webp"><img src="img/arrow.png" alt="" /></picture></h2>
+              <ul>
+                <li>
+                  <label class="custom-radio" for="up-to">
+                    <input type="radio" name="selection" id="up-to" hidden />
+                    <span class="radio-btn"></span> Up to 5 000€
+                  </label>
+                </li>
+                <li>
+                  <label class="custom-radio" for="up-to-10">
+                    <input type="radio" name="selection" id="up-to-10" hidden />
+                    <span class="radio-btn"></span> Up to 10 000€
+                  </label>
+                </li>
+                <li>
+                  <label class="custom-radio" for="up-to-20">
+                    <input type="radio" name="selection" id="up-to-20" hidden />
+                    <span class="radio-btn"></span> Up to 20 000€
+                  </label>
+                </li>
+                <li>
+                  <label class="custom-radio" for="from-50">
+                    <input type="radio" name="selection" id="from-50" hidden />
+                    <span class="radio-btn"></span> FROM 50 000€
+                  </label>
+                </li>
+              </ul>
+              <h2>BRAND <picture><source srcset="img/arrow.webp" type="image/webp"><img src="img/arrow.png" alt="" /></picture></h2>
+              <ul>
+                <li>
+                  <label class="custom-radio">
+                    <input type="radio" name="brand" id="brand1" hidden />
+                    <span class="radio-btn"></span> A. LANGE & SOHNE
+                  </label>
+                </li>
+                <li>
+                  <label class="custom-radio">
+                    <input type="radio" name="brand" id="brand2" hidden />
+                    <span class="radio-btn"></span> ARNOLD & SON
+                  </label>
+                </li>
+                <li>
+                  <label class="custom-radio">
+                    <input type="radio" name="brand" id="brand3" hidden />
+                    <span class="radio-btn"></span> AUDEMARS PIGUET
+                  </label>
+                </li>
+                <li>
+                  <label class="custom-radio">
+                    <input type="radio" name="brand" id="brand4" hidden />
+                    <span class="radio-btn"></span> BELL & ROSS
+                  </label>
+                </li>
+                <li>
+                  <label class="custom-radio">
+                    <input type="radio" name="brand" id="brand5" hidden />
+                    <span class="radio-btn"></span> BLANCPAIN
+                  </label>
+                </li>
+                <li>
+                  <label class="custom-radio">
+                    <input type="radio" name="brand" id="brand6" hidden />
+                    <span class="radio-btn"></span> BOVET
+                  </label>
+                </li>
+                <li>
+                  <label class="custom-radio">
+                    <input type="radio" name="brand" id="brand7" hidden />
+                    <span class="radio-btn"></span> BREGUET
+                  </label>
+                </li>
+                <li>
+                  <label class="custom-radio">
+                    <input type="radio" name="brand" id="brand8" hidden />
+                    <span class="radio-btn"></span> ROLEX
+                  </label>
+                </li>
+                <li>
+                  <label class="custom-radio">
+                    <input type="radio" name="brand" id="brand9" hidden />
+                    <span class="radio-btn"></span> BREGUET
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="goods__filter--footer">
+              <div class="goods__sort--clear">Clear all</div>
+              <div class="goods__sort--apply">Apply</div>
+            </div>
+          </div>
+        </div>
+        <div class="goods__list">
+          <div class="goods__item">
+            <div class="goods__item--label">NEW</div>
+            <div class="goods__item--image">
+              <picture>
+                <source srcset="img/rolex_card.webp" type="image/webp" />
+                <img src="img/rolex_card.png" alt="rolex" />
+              </picture>
+            </div>
+            <div class="goods__item--info">
+              <div class="goods__item--brand">ROLEX</div>
+              <div class="goods__item--name">
+                <div class="goods__item--model">
+                  <span>Model:</span>Datejust
+                </div>
+                <div class="goods__item--size">
+                  <span>Case size:</span> 41mm
+                </div>
+                <div class="goods__item--condition">
+                  <span>Condition:</span> New
+                </div>
+              </div>
+              <div class="goods__item--block">
+                <div class="goods__item--price">14 800€</div>
+                <div class="goods__item--button">ADD TO CART</div>
+              </div>
+            </div>
+          </div>
+          <div class="goods__item">
+            <div class="goods__item--image">
+              <picture>
+                <source srcset="img/rolex_card.webp" type="image/webp" />
+                <img src="img/rolex_card.png" alt="rolex" />
+              </picture>
+            </div>
+            <div class="goods__item--info">
+              <div class="goods__item--brand">ROLEX</div>
+              <div class="goods__item--name">
+                <div class="goods__item--model">
+                  <span>Model:</span>Datejust
+                </div>
+                <div class="goods__item--size">
+                  <span>Case size:</span> 41mm
+                </div>
+                <div class="goods__item--condition">
+                  <span>Condition:</span> New
+                </div>
+              </div>
+              <div class="goods__item--block">
+                <div class="goods__item--price">14 800€</div>
+                <div class="goods__item--button">ADD TO CART</div>
+              </div>
+            </div>
+          </div>
+          <div class="goods__item">
+            <div class="goods__item--image">
+              <picture>
+                <source srcset="img/rolex_card.webp" type="image/webp" />
+                <img src="img/rolex_card.png" alt="rolex" />
+              </picture>
+            </div>
+            <div class="goods__item--info">
+              <div class="goods__item--brand">ROLEX</div>
+              <div class="goods__item--name">
+                <div class="goods__item--model">
+                  <span>Model:</span>Datejust
+                </div>
+                <div class="goods__item--size">
+                  <span>Case size:</span> 41mm
+                </div>
+                <div class="goods__item--condition">
+                  <span>Condition:</span> New
+                </div>
+              </div>
+              <div class="goods__item--block">
+                <div class="goods__item--price">14 800€</div>
+                <div class="goods__item--button">ADD TO CART</div>
+              </div>
+            </div>
+          </div>
+          <div class="goods__item">
+            <div class="goods__item--image">
+              <picture>
+                <source srcset="img/rolex_card.webp" type="image/webp" />
+                <img src="img/rolex_card.png" alt="rolex" />
+              </picture>
+            </div>
+            <div class="goods__item--info">
+              <div class="goods__item--brand">ROLEX</div>
+              <div class="goods__item--name">
+                <div class="goods__item--model">
+                  <span>Model:</span>Datejust
+                </div>
+                <div class="goods__item--size">
+                  <span>Case size:</span> 41mm
+                </div>
+                <div class="goods__item--condition">
+                  <span>Condition:</span> New
+                </div>
+              </div>
+              <div class="goods__item--block">
+                <div class="goods__item--price">14 800€</div>
+                <div class="goods__item--button">ADD TO CART</div>
+              </div>
+            </div>
+          </div>
+          <div class="goods__item">
+            <div class="goods__item--image">
+              <picture>
+                <source srcset="img/rolex_card.webp" type="image/webp" />
+                <img src="img/rolex_card.png" alt="rolex" />
+              </picture>
+            </div>
+            <div class="goods__item--info">
+              <div class="goods__item--brand">ROLEX</div>
+              <div class="goods__item--name">
+                <div class="goods__item--model">
+                  <span>Model:</span>Datejust
+                </div>
+                <div class="goods__item--size">
+                  <span>Case size:</span> 41mm
+                </div>
+                <div class="goods__item--condition">
+                  <span>Condition:</span> New
+                </div>
+              </div>
+              <div class="goods__item--block">
+                <div class="goods__item--price">14 800€</div>
+                <div class="goods__item--button">ADD TO CART</div>
+              </div>
+            </div>
+          </div>
+          <div class="goods__item">
+            <div class="goods__item--image">
+              <picture>
+                <source srcset="img/rolex_card.webp" type="image/webp" />
+                <img src="img/rolex_card.png" alt="rolex" />
+              </picture>
+            </div>
+            <div class="goods__item--info">
+              <div class="goods__item--brand">ROLEX</div>
+              <div class="goods__item--name">
+                <div class="goods__item--model">
+                  <span>Model:</span>Datejust
+                </div>
+                <div class="goods__item--size">
+                  <span>Case size:</span> 41mm
+                </div>
+                <div class="goods__item--condition">
+                  <span>Condition:</span> New
+                </div>
+              </div>
+              <div class="goods__item--block">
+                <div class="goods__item--price">14 800€</div>
+                <div class="goods__item--button">ADD TO CART</div>
+              </div>
+            </div>
+          </div>
+          <div class="goods__item">
+            <div class="goods__item--image">
+              <picture>
+                <source srcset="img/rolex_card.webp" type="image/webp" />
+                <img src="img/rolex_card.png" alt="rolex" />
+              </picture>
+            </div>
+            <div class="goods__item--info">
+              <div class="goods__item--brand">ROLEX</div>
+              <div class="goods__item--name">
+                <div class="goods__item--model">
+                  <span>Model:</span>Datejust
+                </div>
+                <div class="goods__item--size">
+                  <span>Case size:</span> 41mm
+                </div>
+                <div class="goods__item--condition">
+                  <span>Condition:</span> New
+                </div>
+              </div>
+              <div class="goods__item--block">
+                <div class="goods__item--price">14 800€</div>
+                <div class="goods__item--button">ADD TO CART</div>
+              </div>
+            </div>
+          </div>
+          <div class="goods__item">
+            <div class="goods__item--image">
+              <picture>
+                <source srcset="img/rolex_card.webp" type="image/webp" />
+                <img src="img/rolex_card.png" alt="rolex" />
+              </picture>
+            </div>
+            <div class="goods__item--info">
+              <div class="goods__item--brand">ROLEX</div>
+              <div class="goods__item--name">
+                <div class="goods__item--model">
+                  <span>Model:</span>Datejust
+                </div>
+                <div class="goods__item--size">
+                  <span>Case size:</span> 41mm
+                </div>
+                <div class="goods__item--condition">
+                  <span>Condition:</span> New
+                </div>
+              </div>
+              <div class="goods__item--block">
+                <div class="goods__item--price">14 800€</div>
+                <div class="goods__item--button">ADD TO CART</div>
+              </div>
+            </div>
+          </div>
+          <div class="goods__item">
+            <div class="goods__item--image">
+              <picture>
+                <source srcset="img/rolex_card.webp" type="image/webp" />
+                <img src="img/rolex_card.png" alt="rolex" />
+              </picture>
+            </div>
+            <div class="goods__item--info">
+              <div class="goods__item--brand">ROLEX</div>
+              <div class="goods__item--name">
+                <div class="goods__item--model">
+                  <span>Model:</span>Datejust
+                </div>
+                <div class="goods__item--size">
+                  <span>Case size:</span> 41mm
+                </div>
+                <div class="goods__item--condition">
+                  <span>Condition:</span> New
+                </div>
+              </div>
+              <div class="goods__item--block">
+                <div class="goods__item--price">14 800€</div>
+                <div class="goods__item--button">ADD TO CART</div>
+              </div>
+            </div>
+          </div>
+          <div class="goods__item">
+            <div class="goods__item--image">
+              <picture>
+                <source srcset="img/rolex_card.webp" type="image/webp" />
+                <img src="img/rolex_card.png" alt="rolex" />
+              </picture>
+            </div>
+            <div class="goods__item--info">
+              <div class="goods__item--brand">ROLEX</div>
+              <div class="goods__item--name">
+                <div class="goods__item--model">
+                  <span>Model:</span>Datejust
+                </div>
+                <div class="goods__item--size">
+                  <span>Case size:</span> 41mm
+                </div>
+                <div class="goods__item--condition">
+                  <span>Condition:</span> New
+                </div>
+              </div>
+              <div class="goods__item--block">
+                <div class="goods__item--price">14 800€</div>
+                <div class="goods__item--button">ADD TO CART</div>
+              </div>
+            </div>
+          </div>
+          <div class="goods__item">
+            <div class="goods__item--image">
+              <picture>
+                <source srcset="img/rolex_card.webp" type="image/webp" />
+                <img src="img/rolex_card.png" alt="rolex" />
+              </picture>
+            </div>
+            <div class="goods__item--info">
+              <div class="goods__item--brand">ROLEX</div>
+              <div class="goods__item--name">
+                <div class="goods__item--model">
+                  <span>Model:</span>Datejust
+                </div>
+                <div class="goods__item--size">
+                  <span>Case size:</span> 41mm
+                </div>
+                <div class="goods__item--condition">
+                  <span>Condition:</span> New
+                </div>
+              </div>
+              <div class="goods__item--block">
+                <div class="goods__item--price">14 800€</div>
+                <div class="goods__item--button">ADD TO CART</div>
+              </div>
+            </div>
+          </div>
+          <div class="goods__item">
+            <div class="goods__item--image">
+              <picture>
+                <source srcset="img/rolex_card.webp" type="image/webp" />
+                <img src="img/rolex_card.png" alt="rolex" />
+              </picture>
+            </div>
+            <div class="goods__item--info">
+              <div class="goods__item--brand">ROLEX</div>
+              <div class="goods__item--name">
+                <div class="goods__item--model">
+                  <span>Model:</span>Datejust
+                </div>
+                <div class="goods__item--size">
+                  <span>Case size:</span> 41mm
+                </div>
+                <div class="goods__item--condition">
+                  <span>Condition:</span> New
+                </div>
+              </div>
+              <div class="goods__item--block">
+                <div class="goods__item--price">14 800€</div>
+                <div class="goods__item--button">ADD TO CART</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="goods__pagination">
+          <ul>
+            <li class="disabled"><a href="#">&lt;</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">...</a></li>
+            <li><a href="#">26</a></li>
+            <li><a href="#">&gt;</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="footer__container">
+    <div class="footer__list">
+      <div class="footer__item">
+        <div class="footer__title">CONTACT US</div>
+        <a href="tel:+48 696 510 554">
+          <picture>
+            <source srcset="img/phone.webp" type="image/webp" />
+            <img src="img/phone.png" alt="phone" />
+          </picture>
+          +48 696 510 554
+        </a>
+
+        <a href="tel:+380 96 888 8080">
+          <picture>
+            <source srcset="img/phone.webp" type="image/webp" />
+            <img src="img/phone.png" alt="phone" />
+          </picture>
+          +380 96 888 8080
+        </a>
+
+        <a href="mailto:m.dreamwatch@gmail.com">
+          <picture>
+            <source srcset="img/mail.webp" type="image/webp" />
+            <img src="img/mail.png" alt="mail" />
+          </picture>
+          m.dreamwatch@gmail.com
+        </a>
+      </div>
+      <div class="footer__item">
+        <div class="footer__title">BOUTIQUES</div>
+        <p>
+          <svg width="16" height="16">
+            <use xlink:href="img/sprite.svg#icon-pin"></use>
+          </svg>
+          Wiejska 9 Warsaw, Poland
+        </p>
+        <p>
+          <svg width="16" height="16">
+            <use xlink:href="img/sprite.svg#icon-pin"></use>
+          </svg>
+          Malopidvalna 12/10 Kiev, Ukraine
+        </p>
+      </div>
+      <div class="footer__item">
+        <div class="footer__title">FOLLOW US</div>
+        <div class="footer__social">
+          <a href="#">
+            <picture>
+              <source srcset="img/instagram.webp" type="image/webp" />
+              <img src="img/instagram.png" alt="fb" width="76" height="76" />
+            </picture>
+          </a>
+          <a href="#">
+            <picture>
+              <source srcset="img/facebook.webp" type="image/webp" />
+              <img src="img/facebook.png" alt="inst" width="86" height="86" />
+            </picture>
+          </a>
+          <a href="#">
+            <picture>
+              <source srcset="img/telegram.webp" type="image/webp" />
+              <img src="img/telegram.png" alt="twit" width="82" height="69" />
+            </picture>
+          </a>
+          <a href="#">
+            <picture>
+              <source srcset="img/pinterest.webp" type="image/webp" />
+              <img src="img/pinterest.png" alt="vk" width="64" height="64" />
+            </picture>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240805221008"></script>
+    <script src="js/app.min.js?_v=20240805221008"></script>
+  </body>
+</html>
