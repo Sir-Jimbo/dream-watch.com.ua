@@ -1014,7 +1014,7 @@ a {
 }
 
 .men-women__container {
-  padding-top: 0 !important;
+  padding-top: 0;
 }
 
 .men-women__item {
@@ -1911,6 +1911,10 @@ a {
 
   .footer__item p {
     font-size: 16px;
+  }
+
+  .men-women__container {
+    padding: 0 0 45px;
   }
 
   .men-women__list {
