@@ -1015,6 +1015,7 @@ a {
 
 .men-women__container {
   padding-top: 0;
+  max-width: 100%;
 }
 
 .men-women__item {
@@ -1028,6 +1029,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
 .men-women__item:not(:last-child) {
@@ -1042,6 +1044,12 @@ a {
   max-width: 120px;
   width: 100%;
   border: 1px solid #000000;
+}
+
+.men-women__item picture,
+.men-women__item img {
+  margin: 0;
+  width: 100%;
 }
 
 .goods__container {
@@ -1141,7 +1149,7 @@ a {
 
 .goods__left ul li {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
   text-transform: uppercase;
 }
 
@@ -1469,6 +1477,18 @@ a {
   margin-bottom: 0;
 }
 
+.goods__list.two .goods__item--name {
+  font-weight: 400;
+}
+
+.goods__list.two .goods__item--image {
+  display: block;
+}
+
+.goods__list.two .goods__slider {
+  display: none;
+}
+
 .goods__list.three {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1495,6 +1515,7 @@ a {
 }
 
 .goods__list.three .goods__item--image {
+  display: block;
   width: 100%;
 }
 
@@ -1513,6 +1534,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  font-weight: 400;
 }
 
 .goods__list.three .goods__item--name div {
@@ -1553,6 +1575,10 @@ a {
   display: inline-block;
 }
 
+.goods__list.three .goods__slider {
+  display: none;
+}
+
 .goods__item {
   position: relative;
   text-align: center;
@@ -1575,9 +1601,9 @@ a {
 }
 
 .goods__item--image {
+  display: none;
   position: relative;
   overflow: hidden;
-  margin-bottom: 25px;
   background-color: #f8f7f4;
 }
 
@@ -1585,7 +1611,6 @@ a {
   content: "";
   display: block;
   padding-top: 100%;
-  /* Це створює квадрат за рахунок співвідношення сторін */
 }
 
 .goods__item--image picture,
@@ -1604,6 +1629,7 @@ a {
   font-size: 14px;
   font-weight: 600;
   text-align: center;
+  margin-top: 25px;
 }
 
 .goods__item--brand {
@@ -1621,6 +1647,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-weight: 400;
 }
 
 .goods__item--name div {
@@ -1675,6 +1702,26 @@ a {
 
 .goods__pagination ul li a {
   color: #000;
+}
+
+.goods__slider .goods__item--image {
+  display: block;
+}
+
+.goods__slider .swiper-scrollbar {
+  background: none;
+}
+
+.goods__slider .swiper-scrollbar-drag {
+  background: #000;
+  border-radius: unset;
+}
+
+.goods__slider .swiper-horizontal > .swiper-scrollbar,
+.goods__slider .swiper-scrollbar.swiper-scrollbar-horizontal {
+  bottom: 0;
+  left: 0;
+  height: var(--swiper-scrollbar-size, 7px);
 }
 
 .goods .custom-radio {
@@ -1951,6 +1998,10 @@ a {
     width: 350px;
   }
 
+  .goods__left ul li {
+    font-size: 18px;
+  }
+
   .goods__right {
     padding: 0;
     width: calc(100% - 350px);
@@ -1989,6 +2040,10 @@ a {
   }
 
   .goods__item--image {
+    display: block;
+  }
+
+  .goods__item--image {
     width: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1997,6 +2052,7 @@ a {
   }
 
   .goods__item--info {
+    margin-top: 0;
     text-align: left;
     width: 100%;
     background-color: #f8f7f4;
@@ -2023,6 +2079,7 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    font-weight: 600;
   }
 
   .goods__item--name div {
@@ -2069,6 +2126,16 @@ a {
     cursor: pointer;
     background-color: #000;
     color: #fff;
+  }
+
+  .goods__pagination ul {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+
+  .goods__slider {
+    display: none;
   }
 }
 
