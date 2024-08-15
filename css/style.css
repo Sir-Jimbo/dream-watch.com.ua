@@ -2486,8 +2486,12 @@ a {
     display: none;
   }
 
+  .product {
+    padding: 0 45px;
+  }
+
   .product__container {
-    padding-top: 30px !important;
+    padding: 30px 75px 45px;
   }
 
   .product__back span {
@@ -2541,6 +2545,14 @@ a {
     font-size: 18px;
   }
 
+  .characteristics {
+    padding: 0 45px;
+  }
+
+  .characteristics__container {
+    padding: 45px 75px;
+  }
+
   .characteristics__title {
     font-size: 30px;
     margin-bottom: 40px;
@@ -2568,6 +2580,14 @@ a {
 
   .characteristics__item--left {
     max-width: 60%;
+  }
+
+  .like-products {
+    padding: 0 45px;
+  }
+
+  .like-products__container {
+    padding: 0 75px 45px;
   }
 
   .like-products h2 {
