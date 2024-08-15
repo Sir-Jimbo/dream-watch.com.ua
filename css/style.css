@@ -1844,6 +1844,10 @@ a {
   padding: 20px;
 }
 
+.product__right {
+  padding-top: 40px;
+}
+
 .product__title,
 .product__subtitle {
   font-size: 15px;
@@ -2497,7 +2501,7 @@ a {
   }
 
   .product__left {
-    width: 50%;
+    width: 45%;
     margin-right: 20px;
     margin-bottom: 0;
   }
