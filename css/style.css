@@ -2482,8 +2482,8 @@ a {
     display: none;
   }
 
-  .product__back {
-    margin-top: 40px;
+  .product__container {
+    padding-top: 30px !important;
   }
 
   .product__back span {
