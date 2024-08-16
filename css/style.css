@@ -2036,10 +2036,13 @@ a {
       -ms-flex-align: end;
           align-items: flex-end;
   font-size: 12px;
-}
-
-.characteristics__item:not(:last-child) {
-  margin-bottom: 15px;
+  /*
+        &:nth-last-of-type(-n+2) {
+           @media screen and (min-width: 1024px) {
+              margin-bottom: 0;
+           }
+        }
+  */
 }
 
 .characteristics__item--left {
@@ -2640,7 +2643,7 @@ a {
     gap: 15px;
     list-style: none;
     padding: 0;
-    padding-top: 30px;
+    padding-top: 45px;
   }
 
   .characteristics__item {
@@ -2661,6 +2664,7 @@ a {
 
   .like-products h2 {
     font-size: 20px;
+    margin-bottom: 45px;
   }
 
   .like-products__list {
@@ -2788,5 +2792,9 @@ a {
 @media screen and (max-width: 1023px) {
   .catalog__item:not(:last-child) {
     margin-bottom: 25px;
+  }
+
+  .characteristics__item:not(:last-child) {
+    margin-bottom: 15px;
   }
 }
