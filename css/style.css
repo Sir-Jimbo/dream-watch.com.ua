@@ -1785,7 +1785,6 @@ a {
 
 .product__container {
   padding-top: 0;
-  padding-bottom: 20px;
 }
 
 .product__back {
@@ -1827,6 +1826,14 @@ a {
 
 .product__thumbs {
   display: none;
+}
+
+.product__thumbs .swiper-slide {
+  cursor: pointer;
+}
+
+.product__thumbs .swiper-slide .product__image {
+  margin-bottom: 0;
 }
 
 .product__image {
@@ -1944,6 +1951,10 @@ a {
   cursor: pointer;
 }
 
+.product #warranty {
+  margin-bottom: 0;
+}
+
 .product .payment,
 .product .warranty {
   overflow: hidden;
@@ -1962,6 +1973,10 @@ a {
   margin-bottom: 20px;
 }
 
+.characteristics__container {
+  padding-top: 0;
+}
+
 .characteristics__title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1971,7 +1986,6 @@ a {
           align-items: center;
   text-transform: uppercase;
   font-size: 15px;
-  margin-bottom: 20px;
 }
 
 .characteristics__title img {
@@ -2009,6 +2023,7 @@ a {
 }
 
 .characteristics__list.expanded {
+  padding-top: 20px;
   max-height: 1000px;
   /* Досить велике значення, щоб вмістити весь список */
 }
@@ -2020,8 +2035,11 @@ a {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  margin-bottom: 15px;
   font-size: 12px;
+}
+
+.characteristics__item:not(:last-child) {
+  margin-bottom: 15px;
 }
 
 .characteristics__item--left {
@@ -2587,7 +2605,7 @@ a {
   }
 
   .product__info {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .product .payment,
@@ -2600,13 +2618,12 @@ a {
   }
 
   .characteristics__container {
-    padding: 45px 75px;
+    padding: 0 75px 45px;
   }
 
   .characteristics__title {
     font-weight: 600;
     font-size: 20px;
-    margin-bottom: 40px;
   }
 
   .characteristics__title img {
@@ -2623,6 +2640,7 @@ a {
     gap: 15px;
     list-style: none;
     padding: 0;
+    padding-top: 30px;
   }
 
   .characteristics__item {
@@ -2643,7 +2661,6 @@ a {
 
   .like-products h2 {
     font-size: 20px;
-    margin-bottom: 80px;
   }
 
   .like-products__list {
