@@ -2200,16 +2200,14 @@ a {
   padding: 0;
   margin: 0;
   padding-bottom: 5px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 }
 
 .characteristics .underline {
   position: absolute;
   bottom: -2px;
   height: 3px;
-  /* Товщина жирного підкреслення */
-  background-color: black;
-  /* Колір жирного підкреслення */
+  background-color: #000;
   width: 0;
   left: 0;
   -webkit-transition: width 0.3s ease, left 0.3s ease;
@@ -2220,15 +2218,17 @@ a {
   cursor: pointer;
   position: relative;
   font-size: 15px;
+  font-weight: 600;
+  opacity: 0.4;
 }
 
 .characteristics__item:not(:last-child) {
-  margin-right: 15px;
+  margin-right: 25px;
 }
 
 .characteristics__item.active,
 .characteristics__item:hover {
-  font-weight: 500;
+  opacity: 1;
 }
 
 .characteristics__item.active ~ .underline {
@@ -2243,8 +2243,6 @@ a {
 .characteristics .details__item.active {
   display: block;
   padding-top: 25px;
-  max-width: 160px;
-  width: 100%;
 }
 
 .characteristics .details__item ul {
@@ -2834,13 +2832,7 @@ a {
     max-width: fit-content;
   }
 
-  .characteristics__item.active,
-  .characteristics__item:hover {
-    font-weight: 600;
-  }
-
   .characteristics .details__item.active {
-    max-width: 100%;
     padding-top: 45px;
   }
 
