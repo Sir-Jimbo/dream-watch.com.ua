@@ -2145,6 +2145,7 @@ a {
 .characteristics__left img {
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
 }
 
 .characteristics__top {
@@ -2250,9 +2251,14 @@ a {
 }
 
 .characteristics .details__item--title {
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: 700;
   margin-bottom: 5px;
   text-transform: uppercase;
+}
+
+.characteristics .details__item--text {
+  font-size: 13px;
 }
 
 .like-products__container {
@@ -2738,7 +2744,7 @@ a {
   }
 
   .product__container {
-    padding: 30px 75px 45px;
+    padding: 30px 75px 60px;
   }
 
   .product__content {
@@ -2748,7 +2754,9 @@ a {
   }
 
   .product__left {
-    width: 45%;
+    min-width: 45%;
+    width: 100%;
+    max-width: 45%;
     margin-right: 20px;
     margin-bottom: 0;
   }
@@ -2796,25 +2804,15 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 0 75px 45px;
-  }
-
-  .characteristics__left {
-    width: 40%;
-  }
-
-  .characteristics__left img {
-    margin: 0;
+    padding: 0 75px 60px;
   }
 
   .characteristics__left {
     margin-bottom: 0;
-    margin-right: 30px;
-    width: 60%;
-  }
-
-  .characteristics__right {
-    width: 60%;
+    margin-right: 20px;
+    min-width: 45%;
+    width: 100%;
+    max-width: 45%;
   }
 
   .characteristics__title {
@@ -2837,17 +2835,22 @@ a {
   }
 
   .characteristics .details__item ul {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[3];
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     list-style-type: none;
     padding: 0;
   }
 
   .characteristics .details__item ul li {
-    margin-bottom: 20px;
+    width: calc((100% - 30px) / 3);
+    margin: 0 15px 30px 0;
+  }
+
+  .characteristics .details__item ul li:nth-child(3n) {
+    margin-right: 0;
   }
 
   .characteristics .details__item ul li:nth-last-of-type(-n+3) {
@@ -2859,12 +2862,12 @@ a {
   }
 
   .like-products__container {
-    padding: 0 75px 45px;
+    padding: 0 75px 60px;
   }
 
   .like-products h2 {
     font-size: 20px;
-    margin-bottom: 45px;
+    margin-bottom: 60px;
   }
 
   .like-products__list {
@@ -2993,9 +2996,7 @@ a {
   .catalog__item:not(:last-child) {
     margin-bottom: 25px;
   }
-}
 
-@media screen and (max-width: 1022px) {
   .characteristics .details__item ul li:not(:last-child) {
     margin-bottom: 20px;
   }
