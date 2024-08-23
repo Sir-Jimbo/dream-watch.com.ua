@@ -2662,6 +2662,12 @@ a {
     margin-bottom: 0;
   }
 
+  .product__right {
+    min-width: calc(55% - 20px);
+    width: 100%;
+    max-width: calc(55% - 20px);
+  }
+
   .product__thumbs {
     display: block;
     margin-top: 20px;
@@ -2714,6 +2720,12 @@ a {
     min-width: 45%;
     width: 100%;
     max-width: 45%;
+  }
+
+  .characteristics__right {
+    min-width: calc(55% - 20px);
+    width: 100%;
+    max-width: calc(55% - 20px);
   }
 
   .characteristics__title {
