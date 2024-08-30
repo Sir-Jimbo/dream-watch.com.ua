@@ -946,6 +946,7 @@ a {
 
 .news__item--text {
   color: #575757;
+  line-height: 1.5;
 }
 
 .news__item--link {
@@ -2276,20 +2277,38 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 35px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  margin-bottom: 35px;
+  height: 20px;
 }
 
 .contacts__back img {
   cursor: pointer;
-  margin: 0;
   rotate: 90deg;
+  position: absolute;
+  left: 0;
+  right: auto;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 .contacts__back h1 {
-  margin: 0 auto;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .contacts__form {
@@ -2305,6 +2324,7 @@ a {
 }
 
 .contacts__form--item {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2323,8 +2343,7 @@ a {
   margin-bottom: 20px;
 }
 
-.contacts__form--item input,
-.contacts__form--item textarea {
+.contacts__form--item input {
   height: 40px;
   padding: 10px;
   border-bottom: 2px solid #ccc;
@@ -2333,7 +2352,23 @@ a {
   background: #f8f7f4;
 }
 
+.contacts__form--item textarea {
+  padding: 10px;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  resize: none;
+  background: #f8f7f4;
+}
+
+.contacts__form--camera {
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+}
+
 .contacts__form--btn {
+  font-family: "Lora", sans-serif;
+  color: #000000;
   background: none;
   border: 2px solid #000;
   padding: 10px;
@@ -2380,6 +2415,8 @@ a {
 }
 
 .about__back h1 {
+  font-weight: 500;
+  text-transform: uppercase;
   margin: 0;
   position: absolute;
   top: 50%;
@@ -2463,20 +2500,38 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 35px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  margin-bottom: 35px;
+  height: 20px;
 }
 
 .news__back img {
   cursor: pointer;
-  margin: 0;
   rotate: 90deg;
+  position: absolute;
+  left: 0;
+  right: auto;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 .news__back h1 {
-  margin: 0 auto;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .publication__container {
@@ -2487,20 +2542,38 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 35px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  margin-bottom: 35px;
+  height: 20px;
 }
 
 .publication__back img {
   cursor: pointer;
-  margin: 0;
   rotate: 90deg;
+  position: absolute;
+  left: 0;
+  right: auto;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 .publication__back h1 {
-  margin: 0 auto;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .publication__bottom picture {
@@ -2747,6 +2820,11 @@ a {
     height: -moz-fit-content;
     height: fit-content;
     width: 100%;
+  }
+
+  .news__item--tag {
+    font-size: 14px;
+    margin-bottom: 10px;
   }
 
   .news__item {
@@ -3144,7 +3222,10 @@ a {
   }
 
   .contacts__form {
+    max-width: 65%;
+    width: 100%;
     padding: 30px;
+    margin: 0 auto;
   }
 
   .contacts__form--text {
@@ -3206,12 +3287,12 @@ a {
   }
 
   .publication__text h2 {
-    font-size: 30px;
+    font-size: 18px;
     margin-bottom: 60px;
   }
 
   .publication__text p {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.5;
     margin-bottom: 40px;
   }
@@ -3311,11 +3392,6 @@ a {
     min-height: unset;
     max-height: unset;
     width: 100%;
-  }
-
-  .news__item--tag {
-    font-size: 16px;
-    margin-bottom: 10px;
   }
 
   .news__item h3 {
