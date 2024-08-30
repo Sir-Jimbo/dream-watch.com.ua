@@ -2353,46 +2353,40 @@ a {
   padding-top: 0;
 }
 
-.about .about__back {
+.about__back {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  /* Вирівнювання по горизонталі в межах контейнера */
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* Вирівнювання по вертикалі в межах контейнера */
   position: relative;
   margin-bottom: 35px;
-  height: 100vh;
-  /* Встановлює висоту контейнера на 100% висоти вікна перегляду */
+  height: 200px;
 }
 
-.about .about__back img {
+.about__back img {
   cursor: pointer;
-  margin-right: 20px;
-  /* Відступ для стрілки праворуч */
   rotate: 90deg;
   position: absolute;
-  /* Абсолютне позиціонування для розміщення стрілки */
-  left: 20px;
-  /* Відступ від лівого краю контейнера */
+  left: 0;
+  right: auto;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
-.about .about__back h1 {
+.about__back h1 {
   margin: 0;
   position: absolute;
   top: 50%;
-  /* Центрування по вертикалі */
   left: 50%;
-  /* Центрування по горизонталі */
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  /* Переносить елемент на 50% його власної ширини і висоти для точного центрування */
 }
 
 .about__bottom picture {
@@ -3173,7 +3167,7 @@ a {
     padding: 30px 75px 60px;
   }
 
-  .about .about__back {
+  .about__back {
     margin-bottom: 65px;
   }
 
