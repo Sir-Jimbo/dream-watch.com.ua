@@ -2363,7 +2363,7 @@ a {
 .contacts__form--camera {
   position: absolute;
   right: 10px;
-  bottom: 20px;
+  bottom: 10px;
 }
 
 .contacts__form--btn {
@@ -3221,6 +3221,10 @@ a {
     margin-bottom: 65px;
   }
 
+  .contacts__back h1 {
+    font-size: 18px;
+  }
+
   .contacts__form {
     max-width: 65%;
     width: 100%;
@@ -3252,14 +3256,16 @@ a {
     margin-bottom: 65px;
   }
 
+  .about__back h1 {
+    font-size: 18px;
+  }
+
   .about__text {
     margin-top: 75px;
   }
 
   .about__text p {
-    font-size: 20px;
-    line-height: 1.5;
-    margin-bottom: 40px;
+    font-size: 16px;
   }
 
   .news.page .news__container {
@@ -3274,6 +3280,10 @@ a {
     margin-bottom: 65px;
   }
 
+  .news__back h1 {
+    font-size: 18px;
+  }
+
   .publication__container {
     padding: 30px 75px 60px;
   }
@@ -3282,19 +3292,21 @@ a {
     margin-bottom: 65px;
   }
 
+  .publication__back h1 {
+    font-size: 18px;
+  }
+
   .publication__text {
     margin-top: 75px;
   }
 
   .publication__text h2 {
     font-size: 18px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
 
   .publication__text p {
     font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 40px;
   }
 
   .publication__latest {
@@ -3419,7 +3431,7 @@ a {
   }
 
   .publication__item h3 {
-    font-size: 22px;
+    font-size: 16px;
     margin-bottom: 30px;
   }
 
