@@ -2320,7 +2320,7 @@ a {
 
 .contacts__form--text {
   margin-bottom: 40px;
-  line-height: 1.2;
+  line-height: 1.5;
 }
 
 .contacts__form--item {
@@ -2433,7 +2433,7 @@ a {
 }
 
 .about__text {
-  margin-top: 35px;
+  margin: 25px auto 0;
 }
 
 .about__text p {
@@ -2583,12 +2583,11 @@ a {
 }
 
 .publication__text {
-  margin-top: 35px;
+  margin: 25px auto 0;
 }
 
 .publication__text h2 {
   font-size: 15px;
-  margin-bottom: 35px;
   line-height: 1.5;
 }
 
@@ -3234,7 +3233,6 @@ a {
 
   .contacts__form--text {
     font-size: 18px;
-    font-weight: 500;
     margin-bottom: 75px;
   }
 
@@ -3261,7 +3259,8 @@ a {
   }
 
   .about__text {
-    margin-top: 75px;
+    max-width: 65%;
+    margin: 30px auto 0;
   }
 
   .about__text p {
@@ -3297,12 +3296,12 @@ a {
   }
 
   .publication__text {
-    margin-top: 75px;
+    max-width: 65%;
+    margin: 30px auto 0;
   }
 
   .publication__text h2 {
     font-size: 18px;
-    margin-bottom: 30px;
   }
 
   .publication__text p {
