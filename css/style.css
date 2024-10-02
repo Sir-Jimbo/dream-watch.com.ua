@@ -2778,10 +2778,11 @@ a {
   color: #000000;
   line-height: 1.5;
   margin-top: 5px;
-}
-
-.boutiques__phone:not(:last-child) {
-  margin-bottom: 10px;
+  /*
+        &:not(:last-child) {
+           margin-bottom: 10px;
+        }
+  */
 }
 
 .boutiques__phone img {
@@ -3121,6 +3122,7 @@ a {
   font-size: 12px;
   line-height: 1.5;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .services__backside--link {
@@ -4156,7 +4158,7 @@ a {
   }
 
   .about__container {
-    padding: 30px 75px 60px;
+    padding: 30px 75px 35px;
   }
 
   .about__back {
@@ -4256,6 +4258,11 @@ a {
     font-size: 18px;
   }
 
+  .boutiques__bottom {
+    max-width: 65%;
+    margin: 30px auto 0;
+  }
+
   .boutiques__list:last-child {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -4323,6 +4330,10 @@ a {
     width: 36px;
     height: 36px;
     font-size: 18px;
+  }
+
+  .warranty__item--right {
+    margin-top: 5px;
   }
 
   .warranty__item--right h3 {
