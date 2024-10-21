@@ -15,7 +15,7 @@
     rel="stylesheet"
   />
   <link rel="stylesheet" href="css/style.min.css?_v=20241021131027" />
-  <title>Головна</title>
+  <title>Search</title>
 </head>
 
   <body>
@@ -365,388 +365,99 @@
 </header>
 
     <main>
-      <section class="hero">
-  <div class="swiper hero__slider">
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide">
-        <picture>
-          <source srcset="img/hero-1.webp" type="image/webp" />
-          <source srcset="img/hero-1.png" type="image/png" />
-          <img src="img/hero-1.png" alt="hero" />
-        </picture>
-      </div>
-      <div class="swiper-slide">
-        <picture>
-          <source srcset="img/hero-2.webp" type="image/webp" />
-          <source srcset="img/hero-2.png" type="image/png" />
-          <img src="img/hero-2.png" alt="hero" />
-        </picture>
-      </div>
-      <div class="swiper-slide">
-        <picture>
-          <source srcset="img/hero-3.webp" type="image/webp" />
-          <source srcset="img/hero-3.png" type="image/png" />
-          <img src="img/hero-3.png" alt="hero" />
-        </picture>
-      </div>
+      <section class="search">
+  <div class="search__container">
+    <div class="search__top">
+      <form class="search__form" novalidate="">
+        <input
+          class="search__input"
+          type="search"
+          placeholder="Search products"
+          value=""
+          aria-label="Type to search"
+        />
+
+        <button type="submit">Search</button>
+      </form>
     </div>
   </div>
-</section>
-
-      <section class="catalog">
-  <div class="catalog__container">
-    <h2>CATALOGUE</h2>
-    <!--
-    <a href="#" class="catalog__link">
-      <h3>VIEW CATALOGUE</h3>
-    </a>
-    -->
-    <ul class="catalog__list">
-      <li class="catalog__item">
-        <div class="catalog__item--top">
-          <a href="#">
+  <section class="like-products">
+    <div class="like-products__container">
+      <div class="like-products__list">
+        <div class="like-products__item">
+          <div class="like-products__item--image">
             <picture>
-              <source srcset="img/watch.webp" type="image/webp" />
-              <img src="img/watch.png" alt="catalog" />
-            </picture>
-          </a>
-        </div>
-        <div class="catalog__item--bottom">
-          <a href="#">
-            <h3>SWISS WATCHES</h3>
-          </a>
-        </div>
-      </li>
-      <li class="catalog__item">
-        <div class="catalog__item--top">
-          <a href="#">
-            <picture>
-              <source srcset="img/jewelry.webp" type="image/webp" />
-              <img src="img/jewelry.png" alt="catalog" />
-            </picture>
-          </a>
-        </div>
-        <div class="catalog__item--bottom">
-          <a href="#">
-            <h3>JEWELRY</h3>
-          </a>
-        </div>
-      </li>
-      <li class="catalog__item">
-        <div class="catalog__item--top">
-          <a href="#">
-            <picture>
-              <source srcset="img/accessories.webp" type="image/webp" />
-              <img src="img/accessories.png" alt="catalog" />
-            </picture>
-          </a>
-        </div>
-        <div class="catalog__item--bottom">
-          <a href="#">
-            <h3>ACCESSORIES</h3>
-          </a>
-        </div>
-      </li>
-      <li class="catalog__item">
-        <div class="catalog__item--top">
-          <a href="#">
-            <picture>
-              <source srcset="img/services.webp" type="image/webp" />
-              <img src="img/services.png" alt="catalog" />
-            </picture>
-          </a>
-        </div>
-        <div class="catalog__item--bottom">
-          <a href="#">
-            <h3>OUR SERVICES</h3>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </div>
-</section>
-
-      <section class="popular-products">
-  <div class="popular-products__container">
-    <h2>POPULAR PRODUCTS</h2>
-    <div class="popular-products__slider swiper">
-      <div class="popular-products__wrapper swiper-wrapper">
-        <!-- Slides -->
-        <div class="popular-products__slide swiper-slide">
-          <div class="popular-products__slide--top">
-            <picture>
-              <source srcset="img/product-1.webp" type="image/webp" />
-              <img src="img/product-1.png" alt="popular-products" />
+              <source srcset="img/rolex_card.webp" type="image/webp" />
+              <img src="img/rolex_card.png" alt="rolex" />
             </picture>
           </div>
-          <div class="popular-products__slide--bottom">
-            <h3>Audemars Piguet</h3>
-            <p>Royal Oak Selfwinding Watch</p>
+          <div class="like-products__item--info">
+            <div class="like-products__item--brand">ROLEX</div>
+            <div class="like-products__item--name">
+              <div class="like-products__item--model">Datejust</div>
+              <div class="like-products__item--size">41mm</div>
+            </div>
+            <div class="like-products__item--price">16 500€</div>
+            <div class="like-products__item--button">ADD TO CART</div>
           </div>
         </div>
-        <div class="popular-products__slide swiper-slide">
-          <div class="popular-products__slide--top">
+        <div class="like-products__item">
+          <div class="like-products__item--image">
             <picture>
-              <source srcset="img/product-2.webp" type="image/webp" />
-              <img src="img/product-2.png" alt="popular-products" />
+              <source srcset="img/rolex_card.webp" type="image/webp" />
+              <img src="img/rolex_card.png" alt="rolex" />
             </picture>
           </div>
-          <div class="popular-products__slide--bottom">
-            <h3>Audemars Piguet</h3>
-            <p>Royal Oak Selfwinding Watch</p>
+          <div class="like-products__item--info">
+            <div class="like-products__item--brand">ROLEX</div>
+            <div class="like-products__item--name">
+              <div class="like-products__item--model">Datejust</div>
+              <div class="like-products__item--size">41mm</div>
+            </div>
+            <div class="like-products__item--price">16 500€</div>
+            <div class="like-products__item--button">ADD TO CART</div>
           </div>
         </div>
-        <div class="popular-products__slide swiper-slide">
-          <div class="popular-products__slide--top">
+        <div class="like-products__item">
+          <div class="like-products__item--image">
             <picture>
-              <source srcset="img/product-3.webp" type="image/webp" />
-              <img src="img/product-3.png" alt="popular-products" />
+              <source srcset="img/rolex_card.webp" type="image/webp" />
+              <img src="img/rolex_card.png" alt="rolex" />
             </picture>
           </div>
-          <div class="popular-products__slide--bottom">
-            <h3>Audemars Piguet</h3>
-            <p>Royal Oak Selfwinding Watch</p>
+          <div class="like-products__item--info">
+            <div class="like-products__item--brand">ROLEX</div>
+            <div class="like-products__item--name">
+              <div class="like-products__item--model">Datejust</div>
+              <div class="like-products__item--size">41mm</div>
+            </div>
+            <div class="like-products__item--price">16 500€</div>
+            <div class="like-products__item--button">ADD TO CART</div>
           </div>
         </div>
-        <div class="popular-products__slide swiper-slide">
-          <div class="popular-products__slide--top">
+        <div class="like-products__item">
+          <div class="like-products__item--image">
             <picture>
-              <source srcset="img/product-4.webp" type="image/webp" />
-              <img src="img/product-4.png" alt="popular-products" />
+              <source srcset="img/rolex_card.webp" type="image/webp" />
+              <img src="img/rolex_card.png" alt="rolex" />
             </picture>
           </div>
-          <div class="popular-products__slide--bottom">
-            <h3>Audemars Piguet</h3>
-            <p>Royal Oak Selfwinding Watch</p>
+          <div class="like-products__item--info">
+            <div class="like-products__item--brand">ROLEX</div>
+            <div class="like-products__item--name">
+              <div class="like-products__item--model">Datejust</div>
+              <div class="like-products__item--size">41mm</div>
+            </div>
+            <div class="like-products__item--price">16 500€</div>
+            <div class="like-products__item--button">ADD TO CART</div>
           </div>
         </div>
-        <div class="popular-products__slide swiper-slide">
-          <div class="popular-products__slide--top">
-            <picture>
-              <source srcset="img/product-5.webp" type="image/webp" />
-              <img src="img/product-5.png" alt="popular-products" />
-            </picture>
-          </div>
-          <div class="popular-products__slide--bottom">
-            <h3>Audemars Piguet</h3>
-            <p>Royal Oak Selfwinding Watch</p>
-          </div>
-        </div>
-        <div class="popular-products__slide swiper-slide">
-          <div class="popular-products__slide--top">
-            <picture>
-              <source srcset="img/product-6.webp" type="image/webp" />
-              <img src="img/product-6.png" alt="popular-products" />
-            </picture>
-          </div>
-          <div class="popular-products__slide--bottom">
-            <h3>Audemars Piguet</h3>
-            <p>Royal Oak Selfwinding Watch</p>
-          </div>
-        </div>
+      </div>
+      <div class="like-products__more">
+        <a href="#">View more</a>
       </div>
     </div>
-    <div class="popular-products__list">
-      <div class="popular-products__item">
-        <div class="popular-products__item--top">
-          <picture>
-            <source srcset="img/product-1.webp" type="image/webp" />
-            <img src="img/product-1.png" alt="popular-products" />
-          </picture>
-        </div>
-        <div class="popular-products__item--bottom">
-          <h3>Audemars Piguet</h3>
-          <p>Royal Oak Selfwinding Watch</p>
-        </div>
-      </div>
-      <div class="popular-products__item">
-        <div class="popular-products__item--top">
-          <picture>
-            <source srcset="img/product-2.webp" type="image/webp" />
-            <img src="img/product-2.png" alt="popular-products" />
-          </picture>
-        </div>
-        <div class="popular-products__item--bottom">
-          <h3>Audemars Piguet</h3>
-          <p>Royal Oak Selfwinding Watch</p>
-        </div>
-      </div>
-      <div class="popular-products__item">
-        <div class="popular-products__item--top">
-          <picture>
-            <source srcset="img/product-3.webp" type="image/webp" />
-            <img src="img/product-3.png" alt="popular-products" />
-          </picture>
-        </div>
-        <div class="popular-products__item--bottom">
-          <h3>Audemars Piguet</h3>
-          <p>Royal Oak Selfwinding Watch</p>
-        </div>
-      </div>
-      <div class="popular-products__item">
-        <div class="popular-products__item--top">
-          <picture>
-            <source srcset="img/product-4.webp" type="image/webp" />
-            <img src="img/product-4.png" alt="popular-products" />
-          </picture>
-        </div>
-        <div class="popular-products__item--bottom">
-          <h3>Audemars Piguet</h3>
-          <p>Royal Oak Selfwinding Watch</p>
-        </div>
-      </div>
-      <div class="popular-products__item">
-        <div class="popular-products__item--top">
-          <picture>
-            <source srcset="img/product-5.webp" type="image/webp" />
-            <img src="img/product-5.png" alt="popular-products" />
-          </picture>
-        </div>
-        <div class="popular-products__item--bottom">
-          <h3>Audemars Piguet</h3>
-          <p>Royal Oak Selfwinding Watch</p>
-        </div>
-      </div>
-      <div class="popular-products__item">
-        <div class="popular-products__item--top">
-          <picture>
-            <source srcset="img/product-6.webp" type="image/webp" />
-            <img src="img/product-6.png" alt="popular-products" />
-          </picture>
-        </div>
-        <div class="popular-products__item--bottom">
-          <h3>Audemars Piguet</h3>
-          <p>Royal Oak Selfwinding Watch</p>
-        </div>
-      </div>
-      <div class="popular-products__item">
-        <div class="popular-products__item--top">
-          <picture>
-            <source srcset="img/product-1.webp" type="image/webp" />
-            <img src="img/product-1.png" alt="popular-products" />
-          </picture>
-        </div>
-        <div class="popular-products__item--bottom">
-          <h3>Audemars Piguet</h3>
-          <p>Royal Oak Selfwinding Watch</p>
-        </div>
-      </div>
-      <div class="popular-products__item">
-        <div class="popular-products__item--top">
-          <picture>
-            <source srcset="img/product-2.webp" type="image/webp" />
-            <img src="img/product-2.png" alt="popular-products" />
-          </picture>
-        </div>
-        <div class="popular-products__item--bottom">
-          <h3>Audemars Piguet</h3>
-          <p>Royal Oak Selfwinding Watch</p>
-        </div>
-      </div>
-    </div>
-    <a href="#" class="popular-products__link">VIEW MORE</a>
-  </div>
-</section>
-
-      <section class="why">
-  <div class="why__container">
-    <h2>WHY US</h2>
-    <div class="why__slider swiper">
-      <div class="why__wrapper swiper-wrapper">
-        <!-- Slides -->
-        <div class="why__slide swiper-slide">
-          <picture>
-            <source srcset="img/why-1.webp" type="image/webp" />
-            <img src="img/why-1.png" alt="why" />
-          </picture>
-          <p>Only original products with certificate</p>
-        </div>
-        <div class="why__slide swiper-slide">
-          <picture>
-            <source srcset="img/why-2.webp" type="image/webp" />
-            <img src="img/why-2.png" alt="why" />
-          </picture>
-          <p>Only original products with certificate</p>
-        </div>
-        <div class="why__slide swiper-slide">
-          <picture>
-            <source srcset="img/why-3.webp" type="image/webp" />
-            <img src="img/why-3.png" alt="why" />
-          </picture>
-          <p>Only original products with certificate</p>
-        </div>
-        <div class="why__slide swiper-slide">
-          <picture>
-            <source srcset="img/why-1.webp" type="image/webp" />
-            <img src="img/why-1.png" alt="why" />
-          </picture>
-          <p>Only original products with certificate</p>
-        </div>
-        <div class="why__slide swiper-slide">
-          <picture>
-            <source srcset="img/why-2.webp" type="image/webp" />
-            <img src="img/why-2.png" alt="why" />
-          </picture>
-          <p>Only original products with certificate</p>
-        </div>
-        <div class="why__slide swiper-slide">
-          <picture>
-            <source srcset="img/why-3.webp" type="image/webp" />
-            <img src="img/why-3.png" alt="why" />
-          </picture>
-          <p>Only original products with certificate</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-      <section class="news">
-  <div class="news__container">
-    <h2>NEWS</h2>
-    <ul class="news__list">
-      <li class="news__item">
-        <div class="news__item--top">
-          <picture>
-            <source srcset="img/news-1.webp" type="image/webp" />
-            <img src="img/news-1.png" alt="news" width="800" height="500" />
-          </picture>
-        </div>
-        <div class="news__item--bottom">
-          <div class="news__item--tag">news</div>
-          <h3>Bvlgari Unveils New High Jewelry Collection, Aeterna</h3>
-          <div class="news__item--text">
-            Jewelry Maison has unveiled its most extravagant collection to date,
-            Aeterna, in celebration of its 140th anniversary in Rome. The
-            lineconsists of over 500 masterpieces, including high jewelry,
-            watches, bags and fragrances.
-          </div>
-          <a href="#" class="news__item--link">READ MORE</a>
-        </div>
-      </li>
-      <li class="news__item">
-        <div class="news__item--top">
-          <picture>
-            <source srcset="img/news-2.webp" type="image/webp" />
-            <img src="img/news-2.png" alt="news" width="800" height="500" />
-          </picture>
-        </div>
-        <div class="news__item--bottom">
-          <div class="news__item--tag">news</div>
-          <h3>
-            IWC has created the first fully glow-in-the-dark ceramic watch
-          </h3>
-          <div class="news__item--text">
-            Brand has announced the development of a proprietary luminous
-            ceramic technology called Ceralume. The new tech made its debut on a
-            concept watch seen on the wrist of Lewis Hamilton.
-          </div>
-          <a href="#" class="news__item--link">READ MORE</a>
-        </div>
-      </li>
-    </ul>
-  </div>
+  </section>
 </section>
 
     </main>
