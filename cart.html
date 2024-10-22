@@ -15,7 +15,7 @@
     rel="stylesheet"
   />
   <link rel="stylesheet" href="css/style.min.css?_v=20241022183713" />
-  <title>Search</title>
+  <title>CART</title>
 </head>
 
   <body>
@@ -364,103 +364,146 @@
   </div>
 </header>
 
-    <main><section class="search">
-  <div class="search__container">
-    <div class="search__top">
-      <form class="search__form" novalidate="">
-        <input
-          class="search__input"
-          type="search"
-          placeholder="Search products"
-          value=""
-          aria-label="Type to search"
-        />
-
-        <button type="submit">Search</button>
-      </form>
-      <div class="search__empty">
-        <p>No results for this search.</p>
-        <a href="/catalog.html">Back to shopping</a>
+    <main><section class="cart">
+  <div class="cart__container">
+    <div class="cart__top">
+      <div class="cart__back">
+        <picture><source srcset="img/arrow.webp" type="image/webp"><img src="img/arrow.png" alt="" /></picture>
+        <h1>order summary</h1>
       </div>
     </div>
 
-    <div class="search__menu">
-      <a href="#" class="search__menu--link">WATCHES</a>
-      <a href="#" class="search__menu--link">JEWELRY</a>
-      <a href="#" class="search__menu--link">ACCESSORIES</a>
-    </div>
-  </div>
-</section>
-<section class="like-products">
-  <div class="like-products__container">
-    <h2>you may also like</h2>
-    <div class="like-products__list">
-      <div class="like-products__item">
-        <div class="like-products__item--image">
-          <picture>
-            <source srcset="img/rolex_card.webp" type="image/webp" />
-            <img src="img/rolex_card.png" alt="rolex" />
-          </picture>
-        </div>
-        <div class="like-products__item--info">
-          <div class="like-products__item--brand">ROLEX</div>
-          <div class="like-products__item--name">
-            <div class="like-products__item--model">Datejust</div>
-            <div class="like-products__item--size">41mm</div>
+    <div class="cart__bottom">
+      <div class="cart__bottom--left">
+        <form action="" class="cart__form">
+          <div class="cart__form--list">
+            <div class="cart__form--item">
+              <label for="name">Name</label>
+              <input id="name" type="text" required />
+            </div>
+            <div class="cart__form--item">
+              <label for="mail">Address</label>
+              <input id="mail" type="email" required />
+            </div>
+            <div class="cart__form--item">
+              <label for="phone">Country</label>
+              <input name="phone" id="phone" type="phone" required />
+            </div>
+            <div class="cart__form--item">
+              <label for="message">City</label>
+              <input id="message" type="text" required />
+            </div>
+            <div class="cart__form--item">
+              <label for="message">Zip Code</label>
+              <input id="message" type="text" required />
+            </div>
+            <div class="cart__form--item">
+              <label for="message">Phone</label>
+              <input id="message" type="text" required />
+            </div>
+            <div class="cart__form--item">
+              <label for="message">Email</label>
+              <input id="message" type="text" required />
+            </div>
           </div>
-          <div class="like-products__item--price">16 500€</div>
-          <div class="like-products__item--button">ADD TO CART</div>
-        </div>
+        </form>
+
+        <h2>Shipping method</h2>
+        <ul>
+          <li>
+            <label class="custom-radio" for="pickup">
+              <input type="radio" name="selection" id="pickup" hidden />
+              <span class="radio-btn"></span> Pickup
+            </label>
+          </li>
+          <li>
+            <label class="custom-radio" for="ups">
+              <input type="radio" name="selection" id="ups" hidden />
+              <span class="radio-btn"></span> UPS Delivery
+            </label>
+          </li>
+          <li>
+            <label class="custom-radio" for="dhl">
+              <input type="radio" name="selection" id="dhl" hidden />
+              <span class="radio-btn"></span> DHL Delivery
+            </label>
+          </li>
+          <li>
+            <label class="custom-radio" for="ems">
+              <input type="radio" name="selection" id="ems" hidden />
+              <span class="radio-btn"></span> EMS Delivery
+            </label>
+          </li>
+        </ul>
+
+        <h2>Payment method</h2>
+        <ul>
+          <li>
+            <label class="custom-radio" for="online-payment">
+              <input type="radio" name="selection" id="online-payment" hidden />
+              <span class="radio-btn"></span> Online Payment
+            </label>
+          </li>
+          <li>
+            <label class="custom-radio" for="offline-payment">
+              <input
+                type="radio"
+                name="selection"
+                id="offline-payment"
+                hidden
+              />
+              <span class="radio-btn"></span> Offline Payment
+            </label>
+          </li>
+        </ul>
       </div>
-      <div class="like-products__item">
-        <div class="like-products__item--image">
-          <picture>
-            <source srcset="img/rolex_card.webp" type="image/webp" />
-            <img src="img/rolex_card.png" alt="rolex" />
-          </picture>
-        </div>
-        <div class="like-products__item--info">
-          <div class="like-products__item--brand">ROLEX</div>
-          <div class="like-products__item--name">
-            <div class="like-products__item--model">Datejust</div>
-            <div class="like-products__item--size">41mm</div>
+
+      <div class="cart__bottom--right">
+        <div class="cart__bottom--overlay">
+          <div class="cart-product__item">
+            <div class="cart-product__item--image">
+              <picture>
+                <source srcset="img/rolex_card.webp" type="image/webp" />
+                <img src="img/rolex_card.png" alt="rolex" />
+              </picture>
+            </div>
+            <div class="cart-product__item--info">
+              <div class="cart-product__item--brand">ROLEX</div>
+              <div class="cart-product__item--name">
+                <div class="cart-product__item--model">Datejust</div>
+                <div class="cart-product__item--size">41mm</div>
+              </div>
+              <div class="cart-product__item--price">16 500€</div>
+            </div>
           </div>
-          <div class="like-products__item--price">16 500€</div>
-          <div class="like-products__item--button">ADD TO CART</div>
-        </div>
-      </div>
-      <div class="like-products__item">
-        <div class="like-products__item--image">
-          <picture>
-            <source srcset="img/rolex_card.webp" type="image/webp" />
-            <img src="img/rolex_card.png" alt="rolex" />
-          </picture>
-        </div>
-        <div class="like-products__item--info">
-          <div class="like-products__item--brand">ROLEX</div>
-          <div class="like-products__item--name">
-            <div class="like-products__item--model">Datejust</div>
-            <div class="like-products__item--size">41mm</div>
+
+          <div class="cart__total">
+            <div class="cart__total--info">
+              <div class="cart__total--top">
+                <div class="cart__total--block">
+                  <div class="cart__total--title">Subtotal</div>
+                  <div class="cart__total--price">16 500€</div>
+                </div>
+                <div class="cart__total--description">
+                  Shipping and taxes calculated at checkout.
+                </div>
+              </div>
+              <div class="cart__total--bottom">
+                <div class="cart__total--block subtitle">
+                  <div class="cart__total--subtitle">Sales tax</div>
+                  <div class="cart__total--price">0€</div>
+                </div>
+                <div class="cart__total--block">
+                  <div class="cart__total--title">
+                    Subtotal <span>inc. sales tax</span>
+                  </div>
+                  <div class="cart__total--price">16 500€</div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="like-products__item--price">16 500€</div>
-          <div class="like-products__item--button">ADD TO CART</div>
-        </div>
-      </div>
-      <div class="like-products__item">
-        <div class="like-products__item--image">
-          <picture>
-            <source srcset="img/rolex_card.webp" type="image/webp" />
-            <img src="img/rolex_card.png" alt="rolex" />
-          </picture>
-        </div>
-        <div class="like-products__item--info">
-          <div class="like-products__item--brand">ROLEX</div>
-          <div class="like-products__item--name">
-            <div class="like-products__item--model">Datejust</div>
-            <div class="like-products__item--size">41mm</div>
-          </div>
-          <div class="like-products__item--price">16 500€</div>
-          <div class="like-products__item--button">ADD TO CART</div>
+
+          <button class="cart__button">PROCEED TO PAYMENT DETAILS</button>
         </div>
       </div>
     </div>
