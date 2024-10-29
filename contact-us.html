@@ -367,73 +367,143 @@
   </div>
 </header>
 
-    <main><section class="boutiques">
-  <div class="boutiques__container">
-    <div class="boutiques__top">
-      <div class="boutiques__back">
-        <picture><source srcset="img/arrow.webp" type="image/webp"><img src="img/arrow.png" alt="" /></picture>
-        <h1>visit us</h1>
+    <main><section class="contact-us">
+  <div class="price__banner">
+    <picture>
+      <source
+        type="image/webp"
+        media="(max-width: 767px)"
+        srcset="img/service-request-mob.webp"
+      />
+      <source
+        type="image/webp"
+        media="(min-width: 768px)"
+        srcset="img/contact-us-desktop.webp"
+      />
+      <source
+        type="image/png"
+        media="(max-width: 767px)"
+        srcset="img/service-request-mob.png"
+      />
+      <source
+        type="image/png"
+        media="(min-width: 768px)"
+        srcset="img/contact-us-desktop.png"
+      />
+      <img
+        src="img/contact-us-desktop.png"
+        alt="services"
+        width="1200"
+        height="550"
+      />
+    </picture>
+  </div>
+  <div class="contact-us__container">
+    <div class="price__top">
+      <div class="price__back">
+        <h1>CONTACT US</h1>
       </div>
     </div>
-
-    <div class="boutiques__bottom">
-      <div class="boutiques__list top">
-        <div class="boutiques__item">
+    <div class="contact-us__list">
+      <div class="contact-us__item">
+        <div class="contact-us__item--top">
           <picture>
-            <source srcset="img/boutique-1.webp" type="image/webp" />
-            <img src="img/boutique-1.PNG" alt="boutique" />
+            <source srcset="img/phone-icon.webp" type="image/webp" />
+            <img src="img/phone-icon.png" alt="phone" width="10" height="10" />
           </picture>
+          <h3>CALL US</h3>
         </div>
-        <div class="boutiques__item">
-          <picture>
-            <source srcset="img/boutique-2.webp" type="image/webp" />
-            <img src="img/boutique-2.PNG" alt="boutique" />
-          </picture>
+        <div class="contact-us__item--bottom">
+          <a href="tel:+48 696 510 554">+48 696 510 554 (Poland)</a>
+          <a href="tel:+380 96 888 8080">+380 96 888 8080 (Ukraine)</a>
         </div>
       </div>
-
-      <div class="boutiques__list bottom">
-        <div class="boutiques__item">
-          <h2>OUR BOUTIQUE</h2>
-          <div class="boutiques__address">
-            <span>POLAND</span> Warsaw, Wiejska 9/1A
-          </div>
-          <a href="tel:+48 696 510 554" class="boutiques__phone">
-            <picture>
-              <source srcset="img/phone.webp" type="image/webp" />
-              <img src="img/phone.png" alt="phone" />
-            </picture>
-            +48 696 510 554
-          </a>
+      <div class="contact-us__item">
+        <div class="contact-us__item--top">
+          <picture>
+            <source srcset="img/mail-icon.webp" type="image/webp" />
+            <img src="img/mail-icon.png" alt="mail" width="10" height="10" />
+          </picture>
+          <h3>E-MAIL US</h3>
+        </div>
+        <div class="contact-us__item--bottom">
+          <p>Our consultant will respond as soon as possible.</p>
+          <a href="mailto:m.dreamwatch@gmail.com">m.dreamwatch@gmail.com</a>
+        </div>
+      </div>
+      <div class="contact-us__item">
+        <div class="contact-us__item--top">
+          <picture>
+            <source srcset="img/pin-icon.webp" type="image/webp" />
+            <img src="img/pin-icon.png" alt="pin" width="10" height="10" />
+          </picture>
+          <h3>VISIT US</h3>
+        </div>
+        <div class="contact-us__item--bottom">
           <a
             href="https://www.google.com/maps?q=POLAND+Warsaw,+Wiejska+9/1A"
             target="_blank"
-            class="boutiques__map"
+            class="contact-us__map"
           >
-            Open in Google Maps
-          </a>
-        </div>
-        <div class="boutiques__item">
-          <h2>OUR OFFICE</h2>
-          <div class="boutiques__address">
-            <span>UKRAINE</span> Kiev, Malopidvalna 12/10
-          </div>
-          <a href="tel:+380 96 888 8080" class="boutiques__phone">
-            <picture>
-              <source srcset="img/phone.webp" type="image/webp" />
-              <img src="img/phone.png" alt="phone" />
-            </picture>
-            +380 96 888 8080
+            Warsaw, Wiejska 9/1A
           </a>
           <a
             href="https://maps.app.goo.gl/Whs9goTRHuKMFpg3A"
             target="_blank"
-            class="boutiques__map"
+            class="contact-us__map"
           >
-            Open in Google Maps
+            Kiev, Malopidvalna 12/10
           </a>
         </div>
       </div>
+      <div class="contact-us__item">
+        <div class="contact-us__item--top">
+          <picture>
+            <source srcset="img/info-icon.webp" type="image/webp" />
+            <img src="img/info-icon.png" alt="info" width="10" height="10" />
+          </picture>
+          <h3>FAQ</h3>
+        </div>
+        <div class="contact-us__item--bottom">
+          <p>Find answers to commonly raised questions.</p>
+          <a href="faq.html">FAQ</a>
+        </div>
+      </div>
+      <a href="contacts.html" class="contact-us__item">
+        <div class="contact-us__item--top">
+          <picture>
+            <source srcset="img/order-icon.webp" type="image/webp" />
+            <img src="img/order-icon.png" alt="order" width="10" height="10" />
+          </picture>
+          <h3>SPECIAL ORDER</h3>
+        </div>
+        <div class="contact-us__item--bottom">
+          <p>
+            Our professional team is here to help with special orders, gift
+            ideas, watch services and more.
+          </p>
+        </div>
+      </a>
+      <a href="service-request.html" class="contact-us__item">
+        <div class="contact-us__item--top">
+          <picture>
+            <source srcset="img/service-icon.webp" type="image/webp" />
+            <img
+              src="img/service-icon.png"
+              alt="service"
+              width="10"
+              height="10"
+            />
+          </picture>
+          <h3>REQUEST A SERVICE</h3>
+        </div>
+        <div class="contact-us__item--bottom">
+          <p>
+            Looking for watch repair or servicing? Let our professionals handle
+            it — submit your service request today.
+          </p>
+        </div>
+      </a>
     </div>
   </div>
 </section>
